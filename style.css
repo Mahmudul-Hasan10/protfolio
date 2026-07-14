@@ -77,8 +77,25 @@ header {
 .secondary-btn { border: 1px solid rgba(255, 255, 255, 0.15); color: white; }
 .secondary-btn:hover { border-color: #b83bff; background: rgba(184, 59, 255, 0.05); transform: translateY(-2px); }
 
-.hero-image img { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 3px solid #7028ff; box-shadow: 0 8px 25px rgba(112, 40, 255, 0.25); transition: 0.4s; }
-.hero-image img:hover { transform: scale(1.04); border-color: #00f2fe; }
+/* .hero-image img { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 3px solid #7028ff; box-shadow: 0 8px 25px rgba(112, 40, 255, 0.25); transition: 0.4s; }
+.hero-image img:hover { transform: scale(1.04); border-color: #00f2fe; } */
+/* Hero Image Update: Bigger size & Rounded Square Shape */
+.hero-image img { 
+    width: 260px;          /* সাইজ ১৮০px থেকে বাড়িয়ে ২৬০px করা হয়েছে */
+    height: 260px;         /* সাইজ ১৮০px থেকে বাড়িয়ে ২৬০px করা হয়েছে */
+    object-fit: cover; 
+    border-radius: 24px;   /* গোল (৫০%) থেকে পরিবর্তন করে রাউন্ডেড স্কয়ার করা হয়েছে */
+    border: 3px solid #7028ff; 
+    box-shadow: 0 8px 25px rgba(112, 40, 255, 0.25); 
+    transition: 0.4s; 
+}
+
+.hero-image img:hover { 
+    transform: scale(1.04) rotate(1deg); /* হালকা টিল্টসহ জুম ইফেক্ট */
+    border-color: #00f2fe; 
+    box-shadow: 0 12px 30px rgba(0, 242, 254, 0.3);
+}
+
 
 /* About Section */
 .about-container { max-width: 700px; margin: 0 auto; text-align: center; }
